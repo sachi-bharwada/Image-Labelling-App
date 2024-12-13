@@ -7,6 +7,26 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <Button
+        android:id="@+id/imagelabelling"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#1F35AD"
+        android:text="Recognize Image Contents"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imagelabelling"
+        tools:srcCompat="@tools:sample/avatars" />
+
     <TextView
         android:id="@+id/text1"
         android:layout_width="wrap_content"
@@ -17,15 +37,5 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imagelabelling" />
-
-    <Button
-        android:id="@+id/imagelabelling"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#1F35AD"
-        android:text="Recognize Image Contents"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
