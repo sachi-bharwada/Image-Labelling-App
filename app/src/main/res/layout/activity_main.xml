@@ -8,10 +8,22 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/text1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:background="#AF1818"
+        android:paddingLeft="20dp"
+        android:textColor="#D0D0D0"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagelabelling" />
+
+    <Button
+        android:id="@+id/imagelabelling"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#1F35AD"
+        android:text="Recognize Image Contents"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
